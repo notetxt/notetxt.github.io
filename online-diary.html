@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Online Diary – Free Daily Diary App with Calendar View | NoteTxt</title>
+<meta name="description" content="Keep a free online diary with date-stamped entries, a visual calendar, and mood tags. No sign-up, no install — your daily diary saves privately in your browser.">
+<meta name="keywords" content="online diary, free online diary, daily diary app, digital diary, diary online no sign up, write diary online, online diary with calendar">
+<meta name="author" content="NoteTxt">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://notetxt.github.io/online-diary">
+<meta name="theme-color" content="#FBF6EA">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://notetxt.github.io/online-diary">
+<meta property="og:title" content="Online Diary – Free Daily Diary App with Calendar View">
+<meta property="og:description" content="A free online diary with date-stamped entries, a visual calendar, and mood tags. No sign-up, saves privately in your browser.">
+<meta property="og:image" content="https://notetxt.github.io/og-image.png">
+<meta property="og:site_name" content="NoteTxt">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Online Diary – Free Daily Diary App with Calendar View">
+<meta name="twitter:description" content="Keep a free online diary with date-stamped entries, a visual calendar, and mood tags. No sign-up required.">
+<meta name="twitter:image" content="https://notetxt.github.io/og-image.png">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF8C82'/%3E%3Crect x='25' y='18' width='50' height='64' rx='4' fill='%23FBF6EA'/%3E%3Cline x1='34' y1='34' x2='66' y2='34' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='34' y1='46' x2='66' y2='46' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='34' y1='58' x2='54' y2='58' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/diary.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DH0NXE4ME3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DH0NXE4ME3');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9759808041159779" crossorigin="anonymous"></script>
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://notetxt.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Online Diary", "item": "https://notetxt.github.io/online-diary" }
+  ]
+}
+</script>
+
+<!-- Schema: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Online Diary",
+  "url": "https://notetxt.github.io/online-diary",
+  "description": "A free online diary for writing date-stamped daily entries, browsing past days on a visual calendar, and tagging each entry with a mood. No account required; entries save privately in the browser.",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": [
+    "Date-stamped diary entries",
+    "Visual calendar view of past entries",
+    "Optional mood tag per entry",
+    "Auto-save to local browser storage",
+    "No sign-up or account required",
+    "Mobile-friendly responsive design"
+  ]
+}
+</script>
+
+<!-- Schema: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question", "name": "Is the online diary free to use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The online diary is completely free, with no premium tier, ads blocking your writing, or entry limits." }
+    },
+    {
+      "@type": "Question", "name": "Do I need an account to keep a diary online?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No account or sign-up is needed. Open the page and your diary is ready to write in straight away." }
+    },
+    {
+      "@type": "Question", "name": "Where are my diary entries stored?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Entries are saved locally in your browser's storage on the device you're using, not uploaded to a remote account." }
+    },
+    {
+      "@type": "Question", "name": "Can I edit or delete a past diary entry?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Select any date on the calendar to load that day's entry, then update the text or use the delete button to remove it." }
+    },
+    {
+      "@type": "Question", "name": "Can I add a mood to each diary entry?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Each entry has an optional mood picker so you can tag how you were feeling that day alongside your writing." }
+    },
+    {
+      "@type": "Question", "name": "What's the difference between Online Diary and Private Journal?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Online Diary is built around a calendar of daily, date-stamped entries, while Private Journal adds an optional password lock for more guarded, reflective writing." }
+    },
+    {
+      "@type": "Question", "name": "Can I use the online diary on my phone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The diary is fully responsive and works on phones, tablets, and desktop browsers alike." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="padding-bottom:40px;" aria-label="Introduction">
+    <div class="hero-doodles" aria-hidden="true">
+      <span class="doodle doodle-1">✎</span>
+      <span class="doodle doodle-2">♡</span>
+      <span class="doodle doodle-4">~</span>
+    </div>
+    <div class="container hero-inner">
+      <p class="breadcrumb"><a href="index">Home</a><span>/</span>Online Diary</p>
+      <p class="eyebrow eyebrow-stamp">Free Online Diary · No Sign-Up</p>
+      <h1 class="hero-title">A page for <span class="highlight">today</span>, and every day before it.</h1>
+      <p class="hero-sub">NoteTxt's online diary gives every entry a date, a place on the calendar, and an optional mood. Write today's page below, then scroll back through any day you've already filled in.</p>
+      <div class="hero-cta">
+        <a href="#diary-app" class="btn btn-primary">Start writing</a>
+        <a href="private-journal" class="btn btn-ghost">Need more privacy? Try Private Journal →</a>
+      </div>
+      <p class="hero-meta">No account · No installation · Saved privately in your browser</p>
+    </div>
+  </section>
+
+  <!-- ============ MAIN APP ============ -->
+  <section class="section app-section" id="diary-app" aria-label="Online diary application">
+    <div class="container">
+      <div class="app-shell">
+        <div class="app-header">
+          <div>
+            <p class="eyebrow">The App</p>
+            <h2 class="section-title">Write today's entry</h2>
+          </div>
+          <div class="app-stats" id="diaryStats">
+            <div class="stat">
+              <span class="stat-num" id="statCount">0</span>
+              <span class="stat-label">Entries</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" id="statStreak">0</span>
+              <span class="stat-label">Day streak</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <!-- Calendar panel -->
+          <div class="app-panel calendar-panel">
+            <div class="calendar-head">
+              <button type="button" id="calPrev" class="cal-nav" aria-label="Previous month">‹</button>
+              <h3 id="calMonthLabel">Month Year</h3>
+              <button type="button" id="calNext" class="cal-nav" aria-label="Next month">›</button>
+            </div>
+            <div class="calendar-weekdays">
+              <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+            <p class="calendar-hint"><span class="dot dot-has"></span> Has entry <span class="dot dot-today"></span> Today</p>
+          </div>
+
+          <!-- Editor panel -->
+          <div class="app-panel editor-panel">
+            <div class="editor-top">
+              <div class="editor-date">
+                <label for="entryDate">Date</label>
+                <input type="date" id="entryDate">
+              </div>
+              <div class="mood-picker" id="moodPicker" aria-label="Mood for this entry"></div>
+            </div>
+
+            <label for="entryText" class="visually-hidden">Diary entry text</label>
+            <textarea id="entryText" class="editor-textarea" rows="9" placeholder="Dear diary, today..."></textarea>
+
+            <div class="editor-bottom">
+              <span class="word-count" id="wordCount">0 words</span>
+              <span class="save-status" id="saveStatus">No entry yet for this day</span>
+              <div class="editor-actions">
+                <button type="button" id="deleteEntryBtn" class="btn btn-ghost btn-sm">Delete</button>
+                <button type="button" id="saveEntryBtn" class="btn btn-primary btn-sm">Save Entry</button>
+              </div>
+            </div>
+            <p class="app-empty-note">Entries save automatically as you pause typing, or tap Save Entry any time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section features" id="features" aria-label="Diary features">
+    <div class="container">
+      <p class="eyebrow">Why This Diary</p>
+      <h2 class="section-title">Everything a daily diary needs, nothing it doesn't</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-stamp stamp-coral">FREE</div>
+          <h3>Always free</h3>
+          <p>Unlimited entries, every feature included, no premium diary tier.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-mint">NO LOGIN</div>
+          <h3>No sign-up</h3>
+          <p>No email or password. Open the page and today's entry is ready.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-lavender">CALENDAR</div>
+          <h3>Visual calendar view</h3>
+          <p>Every entry sits on its own date, so your diary reads like a real calendar.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-peach">MOOD</div>
+          <h3>Optional mood tag</h3>
+          <p>Mark how you felt that day with a quick emoji, no extra typing required.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-sky">LOCAL</div>
+          <h3>Stored on your device</h3>
+          <p>Entries are saved in your browser's local storage, not a remote account.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-yellow">MOBILE</div>
+          <h3>Works on any screen</h3>
+          <p>Write from your phone at night and pick it back up on desktop tomorrow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section how" id="how-it-works" aria-label="How the online diary works">
+    <div class="container">
+      <p class="eyebrow">Getting Started</p>
+      <h2 class="section-title">Three steps to your first entry</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Pick a date</h3>
+          <p>Today is selected by default. Tap any other day on the calendar to open it instead.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Write &amp; tag a mood</h3>
+          <p>Fill in the page, then pick the emoji that matches how the day went.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>It's saved</h3>
+          <p>Your entry saves locally as you pause typing, and lights up on the calendar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEO DETAIL CONTENT ============ -->
+  <section class="section detail" id="about-diary" aria-label="About the online diary">
+    <div class="container">
+      <p class="eyebrow">A Closer Look</p>
+      <h2 class="section-title">What this online diary is for</h2>
+
+      <div class="detail-row">
+        <h3>A Free Online Diary</h3>
+        <p>This online diary is built for the small habit of writing something down at the end of the day. As a free online diary with no sign-up, it skips the account creation, the subscription prompts, and the app-store download, leaving just a date, a blank space, and a save button. Whether you're after a daily diary app for a single line a day or a longer reflection, the page stretches to fit.</p>
+      </div>
+      <div class="detail-row">
+        <h3>Why Keep a Daily Diary?</h3>
+        <p>A daily diary turns ordinary days into something you can look back on, a record of small wins, hard weeks, and the in-between. Writing a few lines each evening is one of the simplest habits to start and one of the easiest to keep, especially when the digital diary itself takes care of dating and organizing every entry automatically.</p>
+      </div>
+      <div class="detail-row">
+        <h3>Your Entries Stay on Your Device</h3>
+        <p>Every diary entry written here is stored locally in your browser rather than uploaded to a server or tied to an account. That keeps the diary online experience private by default: there's no login screen because there's no remote profile to log into, just a calendar of entries that lives on whichever device you wrote them on.</p>
+      </div>
+      <div class="detail-row">
+        <h3>Online Diary vs. Private Journal</h3>
+        <p>Online Diary and <a href="private-journal">Private Journal</a> share the same spirit but suit slightly different writing. Online Diary is built around the calendar, ideal for quick, dated check-ins on a daily diary online habit. Private Journal adds an optional password lock for longer, more guarded entries you'd rather keep a little further out of view.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RELATED TOOLS ============ -->
+  <section class="section use-cases" id="related-tools" aria-label="Related NoteTxt tools">
+    <div class="container">
+      <p class="eyebrow">More From NoteTxt</p>
+      <h2 class="section-title">Tools that pair well with a daily diary</h2>
+      <div class="related-grid">
+        <div class="related-card">
+          <h3>Private Journal</h3>
+          <p>A lockable, distraction-free space for entries you'd rather keep behind a password.</p>
+          <a href="private-journal">Open Private Journal →</a>
+        </div>
+        <div class="related-card">
+          <h3>Notepad Online</h3>
+          <p>A plain, auto-saving notepad for everything that isn't quite a diary entry.</p>
+          <a href="notepad-online">Open Notepad Online →</a>
+        </div>
+        <div class="related-card">
+          <h3>Memo Notepad</h3>
+          <p>Quick, color-coded sticky memos for the one-line thought you don't want to lose.</p>
+          <a href="memo-notepad">Open Memo Notepad →</a>
+        </div>
+        <div class="related-card">
+          <h3>List Maker</h3>
+          <p>Turn tomorrow's to-dos into a checkable list right after you finish today's entry.</p>
+          <a href="list-maker">Open List Maker →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section faq" id="faq" aria-label="Frequently asked questions about the online diary">
+    <div class="container">
+      <p class="eyebrow">Questions</p>
+      <h2 class="section-title">Frequently asked questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Is the online diary free to use?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. The online diary is completely free, with no premium tier, ads blocking your writing, or entry limits.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do I need an account to keep a diary online?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>No account or sign-up is needed. Open the page and your diary is ready to write in straight away.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Where are my diary entries stored?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Entries are saved locally in your browser's storage on the device you're using, not uploaded to a remote account.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I edit or delete a past diary entry?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Select any date on the calendar to load that day's entry, then update the text or use the delete button to remove it.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I add a mood to each diary entry?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Each entry has an optional mood picker so you can tag how you were feeling that day alongside your writing.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What's the difference between Online Diary and Private Journal?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Online Diary is built around a calendar of daily, date-stamped entries, while Private Journal adds an optional password lock for more guarded, reflective writing.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I use the online diary on my phone?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. The diary is fully responsive and works on phones, tablets, and desktop browsers alike.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section cta" aria-label="Start your diary">
+    <div class="container cta-inner">
+      <h2>Today's page is still blank.</h2>
+      <p>A date, a mood, a few lines, that's the whole diary. No account needed to start.</p>
+      <a href="#diary-app" class="btn btn-primary">Write today's entry</a>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="/js/header.js" defer></script>
+<script src="/js/footer.js" defer></script>
+<script src="/js/main.js" defer></script>
+<script src="/js/diary-app.js" defer></script>
+</body>
+</html>
