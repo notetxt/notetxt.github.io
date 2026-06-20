@@ -27,14 +27,14 @@
       <div class="footer-col">
         <h4>The Tools</h4>
         <ul>
-          <li><a href="notepad-online">Notepad Online</a></li>
-          <li><a href="Online-diary">Diary Online</a></li>
-          <li><a href="private-journal">Private Journal</a></li>
-          <li><a href="list-maker">List Maker</a></li>
-          <li><a href="memo-notepad">Memo Notepad</a></li>
-          <li><a href="random-text-generator">Random Text Generator</a></li>
-          <li><a href="case-converter">Case Converter</a></li>
-          <li><a href="decision-maker">Decision Maker</a></li>
+          <li><a href="/notepad-online">Notepad Online</a></li>
+          <li><a href="/Online-diary">Diary Online</a></li>
+          <li><a href="/private-journal">Private Journal</a></li>
+          <li><a href="/list-maker">List Maker</a></li>
+          <li><a href="/memo-notepad">Memo Notepad</a></li>
+          <li><a href="/random-text-generator">Random Text Generator</a></li>
+          <li><a href="/case-converter">Case Converter</a></li>
+          <li><a href="/decision-maker">Decision Maker</a></li>
         </ul>
       </div>
 
