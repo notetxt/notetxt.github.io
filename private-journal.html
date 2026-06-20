@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Private Journal Online – Free Secure Journal, No Sign-Up | NoteTxt</title>
+<meta name="description" content="Private Journal by NoteTxt: a free browser-based journal with optional password lock, date-stamped entries, search, and mood tracking. No account needed. Your words stay on your device.">
+<meta name="keywords" content="private journal online, secure journal, online journal, free journal app, password protected journal, personal journal online, journal no sign up, diary journal online, private diary app, browser journal">
+<meta name="author" content="NoteTxt">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://notetxt.github.io/private-journal">
+<meta name="theme-color" content="#FBF6EA">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://notetxt.github.io/private-journal">
+<meta property="og:title" content="Private Journal Online – Free Secure Journal | NoteTxt">
+<meta property="og:description" content="A free private journal with optional password protection, mood tracking, date-stamped entries, and full-text search. No account. Stored only on your device.">
+<meta property="og:image" content="https://notetxt.github.io/og-image.png">
+<meta property="og:site_name" content="NoteTxt">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Private Journal Online – Free Secure Journal | NoteTxt">
+<meta name="twitter:description" content="A free private journal with optional password lock, mood tracking, and date-stamped entries. No account. Stored only on your device.">
+<meta name="twitter:image" content="https://notetxt.github.io/og-image.png">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF8C82'/%3E%3Crect x='25' y='18' width='50' height='64' rx='4' fill='%23FBF6EA'/%3E%3Cline x1='34' y1='34' x2='66' y2='34' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='34' y1='46' x2='66' y2='46' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='34' y1='58' x2='54' y2='58' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Schema: WebPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Private Journal Online – Free Secure Journal",
+  "url": "https://notetxt.github.io/private-journal",
+  "description": "A free browser-based private journal with optional password lock, date-stamped entries, mood tracking, and full-text search. No account needed.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "NoteTxt",
+    "url": "https://notetxt.github.io/"
+  }
+}
+</script>
+
+<!-- Schema: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Private Journal Online",
+  "url": "https://notetxt.github.io/private-journal",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires a modern web browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "A free private journal app with optional password protection, mood tracking, date-stamped entries, full-text search, word count, export, and dark mode. Stored entirely in localStorage — no server, no sign-up.",
+  "featureList": [
+    "Optional password lock with localStorage encryption",
+    "Date and time stamped entries",
+    "Mood tracker per entry",
+    "Full-text search across all entries",
+    "Word count per entry",
+    "Export all entries as .txt",
+    "Dark mode",
+    "Edit and delete entries"
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "NoteTxt",
+    "url": "https://notetxt.github.io/"
+  }
+}
+</script>
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",            "item": "https://notetxt.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Private Journal", "item": "https://notetxt.github.io/private-journal" }
+  ]
+}
+</script>
+
+<!-- Schema: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the Private Journal really private?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. All entries are stored in your browser's localStorage — they never leave your device or reach any server. Adding a password encrypts the stored data with a simple passphrase so no one else using the same browser can read your entries." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an account to use the Private Journal?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There is no sign-up, no email, and no account. Open the page and begin writing immediately." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I forget my journal password?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Because entries are stored locally and encrypted with your chosen passphrase, there is no password recovery option. Choose a memorable passphrase or note it somewhere safe." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export my journal entries?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Use the Export button to download all your entries as a plain .txt file to your device at any time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Private Journal work on mobile?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The journal is fully responsive and works on any smartphone, tablet, or desktop browser without installing anything." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I search through old entries?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The search bar filters all your saved entries in real time as you type, matching words in both the title and body of each entry." }
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============================================================
+   PRIVATE-JOURNAL PAGE — page-scoped additions
+   All base design tokens inherited from style.css
+   ============================================================ */
+
+/* ---- Hero ---- */
+.pj-hero {
+  padding: 72px 0 56px;
+  position: relative;
+  overflow: hidden;
+}
+.pj-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.pj-hero-text .hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  line-height: 1.08;
+  margin: 16px 0 20px;
+}
+.pj-hero-text .hero-sub {
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1.5px dashed var(--ink);
+  background: var(--note-lavender);
+}
+.badge-mint    { background: var(--note-mint); }
+.badge-yellow  { background: var(--note-yellow); }
+.badge-peach   { background: var(--note-peach); }
+.badge-sky     { background: var(--note-sky); }
+
+/* Hero preview card */
+.pj-hero-preview {
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-card);
+  box-shadow: 6px 6px 0 var(--ink);
+  overflow: hidden;
+}
+.preview-bar {
+  background: var(--ink);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.preview-dots { display: flex; gap: 6px; }
+.preview-dots span {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  display: block;
+}
+.preview-dots span:nth-child(1) { background: var(--coral); }
+.preview-dots span:nth-child(2) { background: var(--marigold); }
+.preview-dots span:nth-child(3) { background: var(--mint); }
+.preview-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: rgba(251,246,234,0.6);
+  margin-left: 8px;
+  letter-spacing: 0.08em;
+}
+.preview-lock-row {
+  padding: 14px 18px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1.5px dashed rgba(43,38,32,0.14);
+}
+.preview-lock-icon {
+  font-size: 1.3rem;
+  animation: lock-pulse 3s ease-in-out infinite;
+}
+@keyframes lock-pulse {
+  0%,100%{transform:scale(1);} 50%{transform:scale(1.18);}
+}
+.preview-lock-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.preview-lock-label strong { color: var(--periwinkle); }
+.preview-entries { padding: 10px 18px 16px; display: flex; flex-direction: column; gap: 9px; }
+.preview-entry {
+  border-radius: 8px;
+  padding: 9px 12px;
+  border: 1.5px solid rgba(43,38,32,0.1);
+}
+.preview-entry:nth-child(1) { background: rgba(199,184,234,0.25); }
+.preview-entry:nth-child(2) { background: rgba(155,232,196,0.25); }
+.preview-entry:nth-child(3) { background: rgba(255,210,118,0.2); }
+.pe-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.pe-date {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.pe-mood { font-size: 0.8rem; }
+.pe-line {
+  height: 8px;
+  background: rgba(43,38,32,0.1);
+  border-radius: 4px;
+  margin-bottom: 4px;
+  animation: shimmer 2.4s ease-in-out infinite;
+}
+.pe-line:nth-child(1) { width: 88%; animation-delay: 0s; }
+.pe-line:nth-child(2) { width: 65%; animation-delay: 0.3s; }
+@keyframes shimmer { 0%,100%{opacity:.5} 50%{opacity:1} }
+
+@media (max-width: 780px) {
+  .pj-hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .pj-hero-preview { max-width: 420px; }
+}
+
+/* ============================================================
+   JOURNAL APPLICATION
+   ============================================================ */
+.app-section { padding: 0 0 80px; }
+.app-shell {
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-lift);
+  overflow: hidden;
+}
+
+/* --- Lock screen overlay --- */
+.lock-screen {
+  display: none;
+  position: relative;
+  background: var(--cream-deep);
+  padding: 56px 24px;
+  text-align: center;
+  border-bottom: 2px solid var(--ink);
+}
+.lock-screen.is-visible { display: block; }
+.lock-icon-large {
+  font-size: 3.2rem;
+  margin-bottom: 12px;
+  display: block;
+  animation: lock-pulse 3s ease-in-out infinite;
+}
+.lock-screen h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.lock-screen p {
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+  margin-bottom: 24px;
+}
+.lock-input-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.lock-input {
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  padding: 10px 16px;
+  background: var(--cream);
+  color: var(--ink);
+  outline: none;
+  width: 220px;
+}
+.lock-input:focus { border-color: var(--periwinkle); }
+.lock-err {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--coral-deep);
+  margin-top: 10px;
+  min-height: 18px;
+  letter-spacing: 0.04em;
+}
+
+/* --- Top bar (header inside app) --- */
+.app-topbar {
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.app-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.app-title-label {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--cream);
+  letter-spacing: 0.01em;
+}
+.lock-status {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: rgba(251,246,234,0.55);
+  padding: 3px 10px;
+  border: 1px solid rgba(251,246,234,0.2);
+  border-radius: 999px;
+}
+.lock-status.is-locked { color: var(--marigold); border-color: var(--marigold); }
+.app-topbar-right { display: flex; align-items: center; gap: 6px; }
+
+.tb-btn {
+  background: rgba(251,246,234,0.1);
+  border: 1px solid rgba(251,246,234,0.18);
+  border-radius: 6px;
+  color: var(--cream);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.12s ease;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+.tb-btn:hover { background: rgba(251,246,234,0.22); transform: translateY(-1px); }
+.tb-btn.is-active { background: var(--coral); color: var(--ink); border-color: var(--coral); }
+.tb-divider {
+  width: 1px;
+  height: 22px;
+  background: rgba(251,246,234,0.2);
+  margin: 0 2px;
+}
+
+/* --- Search bar --- */
+.app-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-bottom: 1.5px dashed rgba(43,38,32,0.18);
+  background: var(--cream-deep);
+  flex-wrap: wrap;
+}
+.search-input {
+  flex: 1;
+  min-width: 180px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  border: 1.5px solid rgba(43,38,32,0.25);
+  border-radius: 8px;
+  padding: 7px 12px;
+  background: var(--cream);
+  color: var(--ink);
+  outline: none;
+}
+.search-input:focus { border-color: var(--periwinkle); }
+.search-input::placeholder { color: rgba(43,38,32,0.35); }
+.search-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+/* --- Two-pane layout --- */
+.app-body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 480px;
+}
+.entries-pane {
+  border-right: 2px solid rgba(43,38,32,0.12);
+  overflow-y: auto;
+  max-height: 520px;
+}
+.entries-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+.entries-empty span { display: block; font-size: 2rem; margin-bottom: 10px; }
+
+.entry-item {
+  padding: 14px 16px;
+  border-bottom: 1.5px dashed rgba(43,38,32,0.1);
+  cursor: pointer;
+  transition: background 0.15s;
+  position: relative;
+}
+.entry-item:hover { background: var(--cream-deep); }
+.entry-item.is-active { background: rgba(123,143,227,0.12); border-left: 3px solid var(--periwinkle); }
+.entry-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.entry-date {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.entry-mood-badge { font-size: 0.85rem; }
+.entry-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.entry-preview {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.entry-wc {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--ink-soft);
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+/* --- Editor pane --- */
+.editor-pane { display: flex; flex-direction: column; }
+.editor-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border-bottom: 1.5px dashed rgba(43,38,32,0.12);
+  flex-wrap: wrap;
+}
+.editor-date-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.mood-selector {
+  display: flex;
+  gap: 6px;
+}
+.mood-btn {
+  font-size: 1.1rem;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: border-color 0.15s, transform 0.15s;
+  line-height: 1;
+}
+.mood-btn:hover { transform: scale(1.2); }
+.mood-btn.is-selected { border-color: var(--ink); background: var(--cream-deep); }
+
+.editor-meta-right {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+.editor-action-btn {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1.5px solid var(--ink);
+  background: var(--cream);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.15s;
+  letter-spacing: 0.04em;
+}
+.editor-action-btn:hover { background: var(--cream-deep); }
+.editor-action-btn.save-btn {
+  background: var(--periwinkle);
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.editor-action-btn.save-btn:hover { background: #6a7fd4; }
+
+#entry-title-input {
+  width: 100%;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 2px dashed rgba(43,38,32,0.15);
+  outline: none;
+  padding: 14px 18px 12px;
+  caret-color: var(--coral-deep);
+}
+#entry-title-input::placeholder { color: rgba(43,38,32,0.25); }
+
+#entry-body-input {
+  flex: 1;
+  width: 100%;
+  min-height: 260px;
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--cream);
+  padding: 18px 18px 24px;
+  caret-color: var(--coral-deep);
+}
+#entry-body-input::placeholder { color: rgba(43,38,32,0.28); }
+
+.editor-statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 18px;
+  border-top: 1.5px dashed rgba(43,38,32,0.12);
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.editor-stat {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.editor-stat strong { color: var(--ink); }
+.save-indicator {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--mint);
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.save-indicator::before {
+  content: "";
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Dark mode applied to editor */
+.app-shell.dark-mode #entry-body-input,
+.app-shell.dark-mode #entry-title-input {
+  background: #1e1a16;
+  color: #f0e8d8;
+}
+.app-shell.dark-mode .editor-pane { background: #1e1a16; }
+.app-shell.dark-mode .entries-pane { background: #221e19; }
+
+/* Password manager panel */
+.pw-panel {
+  display: none;
+  background: var(--cream-deep);
+  border-top: 2px solid var(--ink);
+  padding: 16px 18px;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pw-panel.is-open { display: flex; }
+.pw-panel label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+.pw-panel input {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  border: 1.5px solid var(--ink);
+  border-radius: 6px;
+  padding: 7px 12px;
+  background: var(--cream);
+  color: var(--ink);
+  outline: none;
+  width: 180px;
+}
+.pw-panel input:focus { border-color: var(--periwinkle); }
+.pw-feedback {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--mint);
+  letter-spacing: 0.04em;
+}
+.pw-feedback.is-err { color: var(--coral-deep); }
+
+/* Responsive: stack panes on mobile */
+@media (max-width: 720px) {
+  .app-body { grid-template-columns: 1fr; }
+  .entries-pane {
+    border-right: none;
+    border-bottom: 2px solid rgba(43,38,32,0.12);
+    max-height: 220px;
+  }
+  #entry-body-input { min-height: 200px; }
+}
+
+/* ============================================================
+   THE TOOLBOX
+   ============================================================ */
+.toolbox { background: var(--cream-deep); }
+.toolbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 22px;
+}
+.tool-card {
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-card);
+  padding: 24px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  position: relative;
+  overflow: hidden;
+}
+.tool-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+}
+.tool-card.tc-coral::before      { background: var(--coral); }
+.tool-card.tc-mint::before       { background: var(--mint); }
+.tool-card.tc-periwinkle::before { background: var(--periwinkle); }
+.tool-card.tc-marigold::before   { background: var(--marigold); }
+.tool-card.tc-peach::before      { background: var(--note-peach); }
+.tool-card.tc-lavender::before   { background: var(--note-lavender); }
+.tool-card.tc-sky::before        { background: var(--note-sky); }
+.tool-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lift); }
+.tool-card-icon { font-family: var(--font-display); font-size: 2rem; line-height: 1; }
+.tool-card h3   { font-size: 1.12rem; margin: 0; }
+.tool-card p    { color: var(--ink-soft); font-size: 0.9rem; flex: 1; }
+.tool-card-link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--coral-deep);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1.5px solid var(--coral-deep);
+  padding-bottom: 1px;
+  align-self: flex-start;
+  transition: gap 0.2s;
+}
+.tool-card-link:hover { gap: 9px; }
+
+/* ============================================================
+   CTA
+   ============================================================ */
+.cta-pj {
+  background: var(--ink);
+  color: var(--cream);
+  border-radius: 28px;
+  margin: 0 24px 88px;
+  text-align: center;
+}
+.cta-pj-inner { max-width: 640px; margin: 0 auto; padding: 70px 24px; }
+.cta-pj h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 16px;
+}
+.cta-pj p { color: rgba(251,246,234,0.78); margin-bottom: 30px; font-size: 1.02rem; }
+.cta-pj .btn-primary { box-shadow: 4px 4px 0 var(--cream); }
+.cta-pj .btn-primary:hover { box-shadow: 6px 6px 0 var(--cream); }
+
+@media (max-width: 600px) {
+  .cta-pj { margin: 0 14px 60px; border-radius: 20px; }
+  .app-topbar { gap: 6px; }
+  .tb-btn { font-size: 0.68rem; padding: 4px 8px; }
+}
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main id="main-content">
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="section pj-hero" aria-label="Private Journal introduction">
+    <div class="container">
+      <div class="pj-hero-inner">
+
+        <div class="pj-hero-text">
+          <p class="eyebrow"><span class="eyebrow-stamp">Free · No Sign-Up · Private</span></p>
+          <h1 class="hero-title">A journal only <span class="highlight">you</span> can read</h1>
+          <p class="hero-sub">Password-protected, date-stamped, and stored entirely on your own device. Write for an audience of one — yourself — without giving your words to any server.</p>
+          <div class="hero-cta">
+            <a href="#journal-app" class="btn btn-primary">Open the Journal ↓</a>
+            <a href="#toolbox" class="btn btn-ghost">See all tools</a>
+          </div>
+          <div class="hero-badges">
+            <span class="badge">Password lock</span>
+            <span class="badge badge-mint">Mood tracker</span>
+            <span class="badge badge-yellow">Auto-saves</span>
+            <span class="badge badge-peach">Full-text search</span>
+            <span class="badge badge-sky">Export .txt</span>
+          </div>
+        </div>
+
+        <div class="pj-hero-preview" aria-hidden="true">
+          <div class="preview-bar">
+            <div class="preview-dots"><span></span><span></span><span></span></div>
+            <span class="preview-label">private-journal · NoteTxt</span>
+          </div>
+          <div class="preview-lock-row">
+            <span class="preview-lock-icon">🔒</span>
+            <span class="preview-lock-label">Journal locked — <strong>password protected</strong></span>
+          </div>
+          <div class="preview-entries">
+            <div class="preview-entry">
+              <div class="pe-top">
+                <span class="pe-date">Sun 21 Jun 2026 · 09:14</span>
+                <span class="pe-mood">😊</span>
+              </div>
+              <div class="pe-line" style="width:85%"></div>
+              <div class="pe-line" style="width:60%"></div>
+            </div>
+            <div class="preview-entry">
+              <div class="pe-top">
+                <span class="pe-date">Sat 20 Jun 2026 · 22:03</span>
+                <span class="pe-mood">😔</span>
+              </div>
+              <div class="pe-line" style="width:78%"></div>
+              <div class="pe-line" style="width:50%"></div>
+            </div>
+            <div class="preview-entry">
+              <div class="pe-top">
+                <span class="pe-date">Fri 19 Jun 2026 · 07:41</span>
+                <span class="pe-mood">🔥</span>
+              </div>
+              <div class="pe-line" style="width:90%"></div>
+              <div class="pe-line" style="width:40%"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Floating doodles -->
+    <div class="hero-doodles" aria-hidden="true">
+      <span class="doodle doodle-1">🔒</span>
+      <span class="doodle doodle-2">📖</span>
+      <span class="doodle doodle-3">✨</span>
+      <span class="doodle doodle-4">🖊️</span>
+      <span class="doodle doodle-5">💜</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       JOURNAL APPLICATION
+       ============================================================ -->
+  <section class="section app-section" id="journal-app" aria-label="Private Journal web application">
+    <div class="container">
+      <p class="eyebrow">The Journal</p>
+      <h2 class="section-title reveal">Write. Lock. Come back.</h2>
+      <p class="section-sub reveal">Every entry is date-stamped and saved to your browser. Set a password if you share your device, export whenever you like, and search across everything you've ever written.</p>
+
+      <div class="app-shell" id="journal-shell">
+
+        <!-- Top bar -->
+        <div class="app-topbar">
+          <div class="app-topbar-left">
+            <span class="app-title-label">🔒 Private Journal</span>
+            <span class="lock-status" id="lock-status-badge">Unlocked</span>
+          </div>
+          <div class="app-topbar-right">
+            <span class="tb-divider" aria-hidden="true"></span>
+            <button class="tb-btn" id="btn-new-entry">+ New Entry</button>
+            <span class="tb-divider" aria-hidden="true"></span>
+            <button class="tb-btn" id="btn-export">Export .txt</button>
+            <button class="tb-btn" id="btn-pw-toggle">Set Password</button>
+            <button class="tb-btn" id="btn-dark">Dark mode</button>
+          </div>
+        </div>
+
+        <!-- Lock screen (shown when password set and locked) -->
+        <div class="lock-screen" id="lock-screen" role="dialog" aria-modal="true" aria-labelledby="lock-heading">
+          <span class="lock-icon-large" aria-hidden="true">🔒</span>
+          <h3 id="lock-heading">Journal is locked</h3>
+          <p>Enter your passphrase to unlock your entries.</p>
+          <div class="lock-input-row">
+            <input type="password" class="lock-input" id="unlock-input" placeholder="Enter passphrase…" autocomplete="current-password" aria-label="Passphrase to unlock journal">
+            <button class="btn btn-primary btn-sm" id="unlock-btn">Unlock</button>
+          </div>
+          <p class="lock-err" id="lock-err" role="alert"></p>
+        </div>
+
+        <!-- Search bar -->
+        <div class="app-search-bar">
+          <input type="search" class="search-input" id="search-input" placeholder="Search entries…" aria-label="Search journal entries">
+          <span class="search-count" id="search-count" aria-live="polite"></span>
+        </div>
+
+        <!-- Two-pane body -->
+        <div class="app-body">
+
+          <!-- Entries list -->
+          <aside class="entries-pane" id="entries-pane" aria-label="Journal entries list">
+            <div class="entries-empty" id="entries-empty">
+              <span aria-hidden="true">📖</span>
+              No entries yet. Hit <strong>+ New Entry</strong> to begin.
+            </div>
+          </aside>
+
+          <!-- Editor -->
+          <section class="editor-pane" aria-label="Entry editor">
+            <div class="editor-meta">
+              <span class="editor-date-label" id="editor-date-label">—</span>
+              <div class="mood-selector" role="group" aria-label="Select mood">
+                <button class="mood-btn" data-mood="😊" title="Happy" aria-label="Happy">😊</button>
+                <button class="mood-btn" data-mood="😐" title="Neutral" aria-label="Neutral">😐</button>
+                <button class="mood-btn" data-mood="😔" title="Sad" aria-label="Sad">😔</button>
+                <button class="mood-btn" data-mood="😤" title="Frustrated" aria-label="Frustrated">😤</button>
+                <button class="mood-btn" data-mood="🔥" title="Motivated" aria-label="Motivated">🔥</button>
+                <button class="mood-btn" data-mood="😴" title="Tired" aria-label="Tired">😴</button>
+                <button class="mood-btn" data-mood="🥹" title="Grateful" aria-label="Grateful">🥹</button>
+              </div>
+              <div class="editor-meta-right">
+                <button class="editor-action-btn" id="btn-delete-entry" title="Delete this entry" style="display:none">Delete</button>
+                <button class="editor-action-btn save-btn" id="btn-save-entry">Save Entry</button>
+              </div>
+            </div>
+
+            <input
+              type="text"
+              id="entry-title-input"
+              placeholder="Entry title (optional)…"
+              aria-label="Entry title"
+              maxlength="120"
+            >
+
+            <textarea
+              id="entry-body-input"
+              placeholder="What's on your mind today? This entry is just for you…"
+              aria-label="Entry body — write your journal entry here"
+              spellcheck="true"
+            ></textarea>
+
+            <div class="editor-statusbar">
+              <div style="display:flex;gap:16px;">
+                <span class="editor-stat"><strong id="ew-count">0</strong> words</span>
+                <span class="editor-stat"><strong id="ec-count">0</strong> chars</span>
+              </div>
+              <span class="save-indicator" id="entry-save-ind">Ready</span>
+            </div>
+          </section>
+
+        </div><!-- /.app-body -->
+
+        <!-- Password manager panel -->
+        <div class="pw-panel" id="pw-panel">
+          <label for="pw-current">Current passphrase</label>
+          <input type="password" id="pw-current" placeholder="Leave blank if none" autocomplete="current-password" aria-label="Current passphrase">
+          <label for="pw-new">New passphrase</label>
+          <input type="password" id="pw-new" placeholder="New passphrase" autocomplete="new-password" aria-label="New passphrase">
+          <button class="editor-action-btn save-btn" id="btn-pw-save">Apply</button>
+          <button class="editor-action-btn" id="btn-pw-remove">Remove lock</button>
+          <span class="pw-feedback" id="pw-feedback"></span>
+        </div>
+
+      </div><!-- /.app-shell -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURES
+       ============================================================ -->
+  <section class="section" id="features" aria-label="Private Journal features">
+    <div class="container">
+      <p class="eyebrow">What it does</p>
+      <h2 class="section-title reveal">Built for the entries you mean only for yourself</h2>
+      <p class="section-sub reveal">More than a blank text box — a proper private journal with the features that make daily writing feel safe, searchable, and yours.</p>
+      <div class="feature-grid">
+
+        <div class="feature-card reveal">
+          <span class="feature-stamp stamp-lavender">Privacy</span>
+          <h3>Optional password lock</h3>
+          <p>Set a passphrase and your journal entries are obfuscated in localStorage. Anyone who opens the browser sees a lock screen, not your words. No account recovery — only your passphrase opens it.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-stamp stamp-yellow">Logging</span>
+          <h3>Date &amp; time stamped entries</h3>
+          <p>Every entry records the exact date and time it was written. Scroll your list and watch your writing life turn into a personal timeline, one entry at a time.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-stamp stamp-mint">Insight</span>
+          <h3>Mood tracker per entry</h3>
+          <p>Pick one of seven mood emojis when saving an entry. Glance back at your list and see at a glance how your days have felt — without reading a single word.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-stamp stamp-sky">Search</span>
+          <h3>Full-text search</h3>
+          <p>The search bar filters every entry in real time — matching words in titles and body text. Find that thing you wrote three months ago in seconds.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-stamp stamp-coral">Export</span>
+          <h3>Download all entries as .txt</h3>
+          <p>Export your entire journal as a single plain-text file whenever you want a backup or want to move your writing somewhere else. Your words, your file.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <span class="feature-stamp stamp-peach">Writing</span>
+          <h3>Live word count</h3>
+          <p>Each entry shows a word and character count as you type. Useful for stream-of-consciousness targets, therapy prompts, or simply knowing how much you wrote today.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOW IT WORKS
+       ============================================================ -->
+  <section class="section how" id="how-it-works" aria-label="How the Private Journal works">
+    <div class="container">
+      <p class="eyebrow">Getting started</p>
+      <h2 class="section-title reveal">From first entry to locked vault in four steps</h2>
+      <p class="section-sub reveal">The journal is ready the moment you open the page. The lock is optional — add it only if you share your device.</p>
+      <div class="steps">
+
+        <div class="step reveal">
+          <span class="step-num">1</span>
+          <h3>Open &amp; write</h3>
+          <p>Click the page, hit <em>+ New Entry</em>, choose your mood, and write whatever is on your mind. Title is optional.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+
+        <div class="step reveal">
+          <span class="step-num">2</span>
+          <h3>Save the entry</h3>
+          <p>Hit <em>Save Entry</em> and it's added to the list with a date stamp. Your entry is stored in your browser's localStorage instantly.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+
+        <div class="step reveal">
+          <span class="step-num">3</span>
+          <h3>Set a passphrase (optional)</h3>
+          <p>Open <em>Set Password</em> in the toolbar, choose a passphrase, and apply it. Next time you visit, a lock screen appears before any entries do.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+
+        <div class="step reveal">
+          <span class="step-num">4</span>
+          <h3>Search &amp; export</h3>
+          <p>Use the search bar to find old entries by keyword. Hit <em>Export .txt</em> whenever you want a local backup file of everything.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       THE TOOLBOX
+       ============================================================ -->
+  <section class="section toolbox" id="toolbox" aria-label="The NoteTxt Toolbox">
+    <div class="container">
+      <p class="eyebrow">The Toolbox</p>
+      <h2 class="section-title reveal">Eight tools, one corkboard</h2>
+      <p class="section-sub reveal">Private Journal is one of eight free writing and productivity tools on NoteTxt. Each one runs in your browser with zero sign-up and zero installs.</p>
+      <div class="toolbox-grid">
+
+        <div class="tool-card tc-lavender reveal">
+          <div class="tool-card-icon">🔒</div>
+          <h3>Private Journal</h3>
+          <p>The one you're on. Password-protected, date-stamped entries with mood tracking, full-text search, and .txt export.</p>
+          <a href="/private-journal" class="tool-card-link" aria-current="page">You're here →</a>
+        </div>
+
+        <div class="tool-card tc-coral reveal">
+          <div class="tool-card-icon">🗒️</div>
+          <h3>Notepad Online</h3>
+          <p>A distraction-free text area that auto-saves as you type. Download, copy, find &amp; replace, dark mode — all in the toolbar.</p>
+          <a href="/notepad-online" class="tool-card-link">Open Notepad →</a>
+        </div>
+
+        <div class="tool-card tc-periwinkle reveal">
+          <div class="tool-card-icon">📅</div>
+          <h3>Diary Online</h3>
+          <p>Date-stamped daily diary entries that build into a scrollable personal timeline you can browse by calendar.</p>
+          <a href="/online-diary" class="tool-card-link">Open Diary →</a>
+        </div>
+
+        <div class="tool-card tc-mint reveal">
+          <div class="tool-card-icon">✅</div>
+          <h3>List Maker</h3>
+          <p>Turn plain text into checkable to-do lists with drag-and-drop reordering. Groceries, packing lists, project tasks.</p>
+          <a href="/list-maker" class="tool-card-link">Open List Maker →</a>
+        </div>
+
+        <div class="tool-card tc-peach reveal">
+          <div class="tool-card-icon">📌</div>
+          <h3>Memo Notepad</h3>
+          <p>Short, color-coded sticky memos for the quick thought that can't wait. Closer to a corkboard than a document editor.</p>
+          <a href="/memo-notepad" class="tool-card-link">Open Memos →</a>
+        </div>
+
+        <div class="tool-card tc-sky reveal">
+          <div class="tool-card-icon">🎲</div>
+          <h3>Random Text Generator</h3>
+          <p>Generate lorem ipsum, random words, sentences, or paragraphs of placeholder text for mockups and design testing.</p>
+          <a href="/random-text-generator" class="tool-card-link">Generate Text →</a>
+        </div>
+
+        <div class="tool-card tc-marigold reveal">
+          <div class="tool-card-icon">🔡</div>
+          <h3>Case Converter</h3>
+          <p>Switch text between UPPERCASE, lowercase, Title Case, Sentence case, camelCase, and snake_case instantly.</p>
+          <a href="/case-converter" class="tool-card-link">Convert Case →</a>
+        </div>
+
+        <div class="tool-card tc-coral reveal">
+          <div class="tool-card-icon">🎯</div>
+          <h3>Decision Maker</h3>
+          <p>A spinning wheel for yes/no questions or custom lists of options. Log your spins and finally settle tonight's plans.</p>
+          <a href="/decision-maker" class="tool-card-link">Spin the Wheel →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       USE CASES
+       ============================================================ -->
+  <section class="section use-cases" id="use-cases" aria-label="Who uses Private Journal">
+    <div class="container">
+      <p class="eyebrow">Made For</p>
+      <h2 class="section-title reveal">Anyone who writes for themselves</h2>
+      <p class="section-sub reveal">The best journals are never read by anyone else. Here's who keeps one here.</p>
+      <div class="case-grid">
+
+        <div class="case-card reveal">
+          <h3>Reflective writers</h3>
+          <p>Daily entries for processing thoughts, recapping the day, or working through a feeling that needs somewhere to go.</p>
+        </div>
+
+        <div class="case-card reveal">
+          <h3>Therapy &amp; wellness</h3>
+          <p>Prompted journaling, gratitude logs, and CBT exercises that need to stay genuinely private — not synced to a cloud.</p>
+        </div>
+
+        <div class="case-card reveal">
+          <h3>Students</h3>
+          <p>Study reflections, personal goals, and the things you wouldn't put in a shared Google Doc.</p>
+        </div>
+
+        <div class="case-card reveal">
+          <h3>People on shared devices</h3>
+          <p>The password lock means family members, flatmates, or colleagues who use the same browser never see your entries.</p>
+        </div>
+
+        <div class="case-card reveal">
+          <h3>Creative writers</h3>
+          <p>Rough ideas, character sketches, and plot fragments that aren't ready for anyone else's eyes yet.</p>
+        </div>
+
+        <div class="case-card reveal">
+          <h3>Habit builders</h3>
+          <p>Daily writing streaks feel easier when the journal is one click away and the mood tracker shows your pattern over time.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section class="section faq" id="faq" aria-label="Frequently asked questions about Private Journal">
+    <div class="container">
+      <p class="eyebrow">Questions</p>
+      <h2 class="section-title reveal">Answers before you ask</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Is the Private Journal actually private?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Every entry is stored in your browser's localStorage — it never reaches any server. When you set a passphrase, the stored data is obfuscated so that anyone who opens the browser sees a lock screen rather than your entries.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do I need to create an account?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>No. There's no sign-up, no email address, and no account. Open the page and start writing. The passphrase lock is purely optional.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What happens if I forget my passphrase?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Because everything is stored locally and there are no servers involved, there is no password recovery process. If you forget your passphrase, the entries stay locked. Choose something memorable, and keep a note of it somewhere safe.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I export my journal as a file?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. The "Export .txt" button in the toolbar downloads all your entries as a single plain-text file to your device immediately — no email, no account, no waiting.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Will my entries survive if I close the browser?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes, as long as you return on the same browser and the same device. localStorage persists across sessions. Clearing your browser data would erase entries, so export a backup if you want long-term storage.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Does the journal work on my phone?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Private Journal is fully responsive and works on any phone, tablet, or desktop browser. No app to download from any store.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How does the mood tracker work?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>When writing or editing an entry, pick one of seven mood emojis in the editor header — Happy, Neutral, Sad, Frustrated, Motivated, Tired, or Grateful. The chosen mood is saved alongside the entry and displayed in the entries list, giving you a quick visual read on past days without opening each entry.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What's the difference between Private Journal and Diary Online?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Diary Online is a date-first, calendar-oriented tool for day-by-day public-feeling entries. Private Journal is built around security and introspection: it has a password lock, mood tracking, full-text search, and is designed for entries you'd rather keep entirely to yourself.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA
+       ============================================================ -->
+  <section class="section cta-pj" aria-label="Get started with Private Journal">
+    <div class="container">
+      <div class="cta-pj-inner">
+        <h2>The page is blank. The lock is yours.</h2>
+        <p>Open the journal, write whatever today actually felt like, and close the tab knowing it's there — and only yours — whenever you come back.</p>
+        <a href="#journal-app" class="btn btn-primary">Start Writing ↑</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="/js/header.js" defer></script>
+<script src="/js/footer.js" defer></script>
+<script src="/js/main.js" defer></script>
+
+<!-- ============================================================
+     PRIVATE JOURNAL APPLICATION SCRIPT
+     ============================================================ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---- Storage keys ---- */
+  var ENTRIES_KEY = 'notetxt-pj-entries-v1';
+  var LOCK_KEY    = 'notetxt-pj-lock-v1';
+
+  /* ---- State ---- */
+  var entries        = [];   // [{id, title, body, mood, date, ts}]
+  var activeId       = null;
+  var searchQuery    = '';
+  var isDark         = false;
+  var isLocked       = false;
+  var passphrase     = '';
+
+  /* ---- DOM refs ---- */
+  var shell          = document.getElementById('journal-shell');
+  var lockScreen     = document.getElementById('lock-screen');
+  var lockStatusBadge= document.getElementById('lock-status-badge');
+  var unlockInput    = document.getElementById('unlock-input');
+  var unlockBtn      = document.getElementById('unlock-btn');
+  var lockErr        = document.getElementById('lock-err');
+
+  var entriesPane    = document.getElementById('entries-pane');
+  var entriesEmpty   = document.getElementById('entries-empty');
+  var searchInput    = document.getElementById('search-input');
+  var searchCount    = document.getElementById('search-count');
+
+  var editorDateLbl  = document.getElementById('editor-date-label');
+  var titleInput     = document.getElementById('entry-title-input');
+  var bodyInput      = document.getElementById('entry-body-input');
+  var ewCount        = document.getElementById('ew-count');
+  var ecCount        = document.getElementById('ec-count');
+  var saveInd        = document.getElementById('entry-save-ind');
+  var btnSave        = document.getElementById('btn-save-entry');
+  var btnDelete      = document.getElementById('btn-delete-entry');
+  var moodBtns       = document.querySelectorAll('.mood-btn');
+
+  var btnNew         = document.getElementById('btn-new-entry');
+  var btnExport      = document.getElementById('btn-export');
+  var btnPwToggle    = document.getElementById('btn-pw-toggle');
+  var btnDark        = document.getElementById('btn-dark');
+
+  var pwPanel        = document.getElementById('pw-panel');
+  var pwCurrent      = document.getElementById('pw-current');
+  var pwNew          = document.getElementById('pw-new');
+  var btnPwSave      = document.getElementById('btn-pw-save');
+  var btnPwRemove    = document.getElementById('btn-pw-remove');
+  var pwFeedback     = document.getElementById('pw-feedback');
+
+  var selectedMood   = '';
+
+  /* ---- Utility: simple XOR obfuscation (not cryptographic, but enough for local privacy) ---- */
+  function xorStr(str, key) {
+    if (!key) return str;
+    var out = '';
+    for (var i = 0; i < str.length; i++) {
+      out += String.fromCharCode(str.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+    }
+    return out;
+  }
+  function encode(str, key) { return btoa(unescape(encodeURIComponent(xorStr(str, key)))); }
+  function decode(str, key) {
+    try { return xorStr(decodeURIComponent(escape(atob(str))), key); }
+    catch(e) { return null; }
+  }
+
+  /* ---- Load ---- */
+  function loadData() {
+    var lockData = localStorage.getItem(LOCK_KEY);
+    passphrase = lockData || '';
+    isLocked   = !!passphrase;
+
+    if (isLocked) {
+      showLockScreen();
+    } else {
+      readEntries('');
+      renderAll();
+    }
+  }
+
+  function readEntries(pw) {
+    var raw = localStorage.getItem(ENTRIES_KEY);
+    if (!raw) { entries = []; return; }
+    try {
+      var decoded = pw ? decode(raw, pw) : raw;
+      if (decoded === null) { entries = []; return; }
+      entries = JSON.parse(decoded) || [];
+    } catch(e) { entries = []; }
+  }
+
+  function saveEntries() {
+    var json = JSON.stringify(entries);
+    var stored = passphrase ? encode(json, passphrase) : json;
+    localStorage.setItem(ENTRIES_KEY, stored);
+  }
+
+  /* ---- Lock / unlock ---- */
+  function showLockScreen() {
+    lockScreen.classList.add('is-visible');
+    lockStatusBadge.textContent = 'Locked';
+    lockStatusBadge.classList.add('is-locked');
+    unlockInput.value = '';
+    lockErr.textContent = '';
+  }
+
+  function hideLockScreen() {
+    lockScreen.classList.remove('is-visible');
+    lockStatusBadge.textContent = 'Unlocked';
+    lockStatusBadge.classList.remove('is-locked');
+  }
+
+  unlockBtn.addEventListener('click', tryUnlock);
+  unlockInput.addEventListener('keydown', function(e){ if(e.key==='Enter') tryUnlock(); });
+
+  function tryUnlock() {
+    var pw = unlockInput.value;
+    readEntries(pw);
+    if (entries.length === 0) {
+      // Could be empty journal OR wrong password — try decode check
+      var raw = localStorage.getItem(ENTRIES_KEY);
+      if (raw) {
+        var test = decode(raw, pw);
+        if (test === null) {
+          lockErr.textContent = 'Wrong passphrase. Try again.';
+          return;
+        }
+        try { JSON.parse(test); } catch(e) {
+          lockErr.textContent = 'Wrong passphrase. Try again.';
+          return;
+        }
+      }
+    }
+    // Correct (or empty journal)
+    hideLockScreen();
+    renderAll();
+  }
+
+  /* ---- Render entries list ---- */
+  function getFiltered() {
+    if (!searchQuery) return entries.slice().reverse();
+    var q = searchQuery.toLowerCase();
+    return entries.slice().reverse().filter(function(e) {
+      return (e.title || '').toLowerCase().indexOf(q) > -1 ||
+             (e.body  || '').toLowerCase().indexOf(q) > -1;
+    });
+  }
+
+  function renderAll() {
+    var filtered = getFiltered();
+    // Remove old entry items (keep empty msg)
+    var existing = entriesPane.querySelectorAll('.entry-item');
+    existing.forEach(function(el){ el.remove(); });
+
+    if (filtered.length === 0) {
+      entriesEmpty.style.display = '';
+      searchCount.textContent = searchQuery ? 'No results' : '';
+    } else {
+      entriesEmpty.style.display = 'none';
+      searchCount.textContent = searchQuery ? filtered.length + ' result' + (filtered.length !== 1 ? 's' : '') : '';
+      filtered.forEach(function(entry) {
+        var el = buildEntryItem(entry);
+        entriesPane.appendChild(el);
+      });
+    }
+
+    // Refresh active highlight
+    if (activeId) {
+      var active = entriesPane.querySelector('[data-id="' + activeId + '"]');
+      if (active) active.classList.add('is-active');
+    }
+  }
+
+  function buildEntryItem(entry) {
+    var el = document.createElement('div');
+    el.className = 'entry-item' + (entry.id === activeId ? ' is-active' : '');
+    el.setAttribute('data-id', entry.id);
+    el.setAttribute('role', 'button');
+    el.setAttribute('tabindex', '0');
+    el.setAttribute('aria-label', 'Entry: ' + (entry.title || 'Untitled') + ' — ' + formatDate(entry.ts));
+
+    var top = document.createElement('div');
+    top.className = 'entry-item-top';
+    var dateSpan = document.createElement('span');
+    dateSpan.className = 'entry-date';
+    dateSpan.textContent = formatDate(entry.ts);
+    var moodSpan = document.createElement('span');
+    moodSpan.className = 'entry-mood-badge';
+    moodSpan.textContent = entry.mood || '';
+    top.appendChild(dateSpan);
+    top.appendChild(moodSpan);
+
+    var titleDiv = document.createElement('div');
+    titleDiv.className = 'entry-title';
+    titleDiv.textContent = entry.title || 'Untitled';
+
+    var previewDiv = document.createElement('div');
+    previewDiv.className = 'entry-preview';
+    previewDiv.textContent = (entry.body || '').slice(0, 80);
+
+    var wcDiv = document.createElement('div');
+    wcDiv.className = 'entry-wc';
+    var wc = (entry.body || '').trim() === '' ? 0 : (entry.body || '').trim().split(/\s+/).length;
+    wcDiv.textContent = wc + ' word' + (wc !== 1 ? 's' : '');
+
+    el.appendChild(top);
+    el.appendChild(titleDiv);
+    el.appendChild(previewDiv);
+    el.appendChild(wcDiv);
+
+    el.addEventListener('click', function() { openEntry(entry.id); });
+    el.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' ') openEntry(entry.id); });
+    return el;
+  }
+
+  function formatDate(ts) {
+    var d = new Date(ts);
+    return d.toLocaleDateString('en-GB', { weekday:'short', day:'numeric', month:'short', year:'numeric' })
+      + ' · ' + d.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit' });
+  }
+
+  /* ---- Open entry in editor ---- */
+  function openEntry(id) {
+    activeId = id;
+    var entry = entries.find(function(e){ return e.id === id; });
+    if (!entry) return;
+
+    titleInput.value = entry.title || '';
+    bodyInput.value  = entry.body  || '';
+    editorDateLbl.textContent = formatDate(entry.ts);
+    setMood(entry.mood || '');
+    updateEditorStats();
+    btnDelete.style.display = '';
+    saveInd.textContent = 'Saved';
+    saveInd.style.color = 'var(--mint)';
+
+    renderAll();
+  }
+
+  /* ---- New entry ---- */
+  function newEntry() {
+    activeId = null;
+    titleInput.value = '';
+    bodyInput.value  = '';
+    editorDateLbl.textContent = formatDate(Date.now());
+    setMood('');
+    updateEditorStats();
+    btnDelete.style.display = 'none';
+    saveInd.textContent = 'New entry';
+    saveInd.style.color = 'var(--ink-soft)';
+    titleInput.focus();
+    renderAll();
+  }
+
+  btnNew.addEventListener('click', newEntry);
+
+  /* ---- Save entry ---- */
+  btnSave.addEventListener('click', saveCurrentEntry);
+
+  function saveCurrentEntry() {
+    var title = titleInput.value.trim();
+    var body  = bodyInput.value;
+    if (!title && !body.trim()) return;
+
+    if (activeId) {
+      var idx = entries.findIndex(function(e){ return e.id === activeId; });
+      if (idx > -1) {
+        entries[idx].title = title;
+        entries[idx].body  = body;
+        entries[idx].mood  = selectedMood;
+      }
+    } else {
+      var newEnt = {
+        id:    'pj-' + Date.now() + '-' + Math.random().toString(36).slice(2,6),
+        title: title,
+        body:  body,
+        mood:  selectedMood,
+        ts:    Date.now()
+      };
+      entries.push(newEnt);
+      activeId = newEnt.id;
+      btnDelete.style.display = '';
+    }
+
+    saveEntries();
+    saveInd.textContent = 'Saved';
+    saveInd.style.color = 'var(--mint)';
+    renderAll();
+  }
+
+  /* ---- Delete entry ---- */
+  btnDelete.addEventListener('click', function() {
+    if (!activeId) return;
+    if (!confirm('Delete this entry? This cannot be undone.')) return;
+    entries = entries.filter(function(e){ return e.id !== activeId; });
+    saveEntries();
+    newEntry();
+  });
+
+  /* ---- Editor stats ---- */
+  bodyInput.addEventListener('input', function() {
+    updateEditorStats();
+    saveInd.textContent = 'Unsaved';
+    saveInd.style.color = 'var(--marigold)';
+  });
+  titleInput.addEventListener('input', function() {
+    saveInd.textContent = 'Unsaved';
+    saveInd.style.color = 'var(--marigold)';
+  });
+
+  function updateEditorStats() {
+    var val  = bodyInput.value;
+    var wc   = val.trim() === '' ? 0 : val.trim().split(/\s+/).length;
+    ewCount.textContent = wc;
+    ecCount.textContent = val.length;
+  }
+
+  /* ---- Mood selector ---- */
+  function setMood(mood) {
+    selectedMood = mood;
+    moodBtns.forEach(function(btn) {
+      btn.classList.toggle('is-selected', btn.dataset.mood === mood);
+    });
+  }
+  moodBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      setMood(selectedMood === btn.dataset.mood ? '' : btn.dataset.mood);
+    });
+  });
+
+  /* ---- Search ---- */
+  searchInput.addEventListener('input', function() {
+    searchQuery = this.value.trim();
+    renderAll();
+  });
+
+  /* ---- Export ---- */
+  btnExport.addEventListener('click', function() {
+    if (entries.length === 0) return;
+    var lines = entries.slice().sort(function(a,b){ return a.ts - b.ts; }).map(function(e) {
+      var sep = '─'.repeat(50);
+      return [
+        sep,
+        'Date: ' + formatDate(e.ts),
+        'Title: ' + (e.title || 'Untitled'),
+        'Mood: ' + (e.mood || '—'),
+        '',
+        e.body || '',
+        ''
+      ].join('\n');
+    }).join('\n');
+
+    var blob = new Blob([lines], { type: 'text/plain' });
+    var url  = URL.createObjectURL(blob);
+    var a    = document.createElement('a');
+    a.href   = url;
+    a.download = 'private-journal-' + new Date().toISOString().slice(0,10) + '.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  /* ---- Dark mode ---- */
+  btnDark.addEventListener('click', function() {
+    isDark = !isDark;
+    shell.classList.toggle('dark-mode', isDark);
+    btnDark.classList.toggle('is-active', isDark);
+    btnDark.textContent = isDark ? 'Light mode' : 'Dark mode';
+  });
+
+  /* ---- Password panel ---- */
+  btnPwToggle.addEventListener('click', function() {
+    pwPanel.classList.toggle('is-open');
+    if (pwPanel.classList.contains('is-open')) pwCurrent.focus();
+  });
+
+  btnPwSave.addEventListener('click', function() {
+    var cur  = pwCurrent.value;
+    var next = pwNew.value;
+
+    // If there's an existing passphrase, verify current
+    if (passphrase && cur !== passphrase) {
+      showPwFeedback('Current passphrase is wrong.', true);
+      return;
+    }
+    if (!next) {
+      showPwFeedback('Enter a new passphrase.', true);
+      return;
+    }
+
+    // Re-save entries with new passphrase
+    var oldPw  = passphrase;
+    passphrase = next;
+    localStorage.setItem(LOCK_KEY, passphrase);
+    isLocked = true;
+    saveEntries();
+    lockStatusBadge.textContent = 'Locked';
+    lockStatusBadge.classList.add('is-locked');
+    btnPwToggle.textContent = 'Change Password';
+    pwCurrent.value = '';
+    pwNew.value = '';
+    showPwFeedback('Password set! Journal is now locked on next visit.', false);
+  });
+
+  btnPwRemove.addEventListener('click', function() {
+    if (passphrase) {
+      var cur = pwCurrent.value;
+      if (cur !== passphrase) {
+        showPwFeedback('Enter current passphrase to remove it.', true);
+        return;
+      }
+    }
+    // Re-save unencrypted
+    passphrase = '';
+    localStorage.removeItem(LOCK_KEY);
+    isLocked = false;
+    saveEntries();
+    lockStatusBadge.textContent = 'Unlocked';
+    lockStatusBadge.classList.remove('is-locked');
+    btnPwToggle.textContent = 'Set Password';
+    pwCurrent.value = '';
+    pwNew.value = '';
+    showPwFeedback('Password removed. Journal is unlocked.', false);
+  });
+
+  function showPwFeedback(msg, isErr) {
+    pwFeedback.textContent = msg;
+    pwFeedback.classList.toggle('is-err', isErr);
+    setTimeout(function(){ pwFeedback.textContent = ''; }, 3000);
+  }
+
+  /* ---- Init ---- */
+  editorDateLbl.textContent = formatDate(Date.now());
+  loadData();
+
+})();
+</script>
+
+</body>
+</html>
