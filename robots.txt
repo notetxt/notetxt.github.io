@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://notetxt.github.io/sitemap.xml
