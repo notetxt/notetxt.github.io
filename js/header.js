@@ -6,7 +6,7 @@
   const headerHTML = `
   <header class="site-header" id="masthead">
     <div class="container header-inner">
-      <a href="index.html" class="brand" aria-label="NoteTxt home">
+      <a href="/" class="brand" aria-label="NoteTxt home">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none">
             <rect x="4" y="2.5" width="16" height="19" rx="2.4" fill="#FF8C82"/>
@@ -19,14 +19,14 @@
       </a>
 
       <nav class="primary-nav" id="primaryNav" aria-label="Primary">
-        <a href="index.html#apps">Apps</a>
-        <a href="index.html#features">Features</a>
-        <a href="index.html#how-it-works">How It Works</a>
-        <a href="index.html#use-cases">Use Cases</a>
-        <a href="index.html#faq">FAQ</a>
+        <a href="/#apps">Apps</a>
+        <a href="/#features">Features</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#use-cases">Use Cases</a>
+        <a href="/#faq">FAQ</a>
       </nav>
 
-      <a href="notepad-online.html" class="btn btn-primary btn-sm header-cta">Open Notepad</a>
+      <a href="/notepad-online" class="btn btn-primary btn-sm header-cta">Open Notepad</a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
         <span></span><span></span><span></span>
