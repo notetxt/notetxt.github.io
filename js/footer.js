@@ -10,7 +10,7 @@
     <div class="container footer-inner">
 
       <div class="footer-col footer-brand">
-        <a href="index.html" class="brand" aria-label="NoteTxt home">
+        <a href="/" class="brand" aria-label="NoteTxt home">
           <span class="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
               <rect x="4" y="2.5" width="16" height="19" rx="2.4" fill="#FFC233"/>
@@ -27,39 +27,42 @@
       <div class="footer-col">
         <h4>The Tools</h4>
         <ul>
-          <li><a href="notepad-online.html">Notepad Online</a></li>
-          <li><a href="diary-online.html">Diary Online</a></li>
-          <li><a href="private-journal.html">Private Journal</a></li>
-          <li><a href="list-maker.html">List Maker</a></li>
-          <li><a href="memo-notepad.html">Memo Notepad</a></li>
-          <li><a href="random-text-generator.html">Random Text Generator</a></li>
-          <li><a href="case-converter.html">Case Converter</a></li>
-          <li><a href="decision-maker.html">Decision Maker</a></li>
+          <li><a href="notepad-online">Notepad Online</a></li>
+          <li><a href="Online-diary">Diary Online</a></li>
+          <li><a href="private-journal">Private Journal</a></li>
+          <li><a href="list-maker">List Maker</a></li>
+          <li><a href="memo-notepad">Memo Notepad</a></li>
+          <li><a href="random-text-generator">Random Text Generator</a></li>
+          <li><a href="case-converter">Case Converter</a></li>
+          <li><a href="decision-maker">Decision Maker</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>Site</h4>
         <ul>
-          <li><a href="index.html#apps">All Apps</a></li>
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#how-it-works">How It Works</a></li>
-          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="/#apps">All Apps</a></li>
+          <li><a href="/#features">Features</a></li>
+          <li><a href="/#how-it-works">How It Works</a></li>
+          <li><a href="/#faq">FAQ</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Service</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/cookies">Cookies Policy</a></li>
         </ul>
       </div>
 
     </div>
 
     <div class="container footer-bottom">
-      <p>&copy; ${year} NoteTxt. All rights reserved.</p>
+      <p>&copy; ${year} NoteTxT. All rights reserved.</p>
       <p class="footer-tagline">Built for note-takers, list-makers and the occasionally undecided.</p>
     </div>
   </footer>
