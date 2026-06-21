@@ -1,0 +1,187 @@
+/* ===================================================================
+   NoteTxt — Memo Notepad App styles (page-specific)
+   Builds on css/style.css (reuses .board / .sticky / .tape / .rot-*
+   from the homepage's sticky-note system) + css/app-shared.css
+   =================================================================== */
+
+/* ---------- Toolbar ---------- */
+.memo-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.memo-search {
+  flex: 1;
+  min-width: 180px;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  background: var(--cream);
+  color: var(--ink);
+}
+.memo-search:focus { outline: none; box-shadow: 0 0 0 3px rgba(255, 194, 51, 0.5); }
+
+.view-tabs {
+  display: flex;
+  gap: 4px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 4px;
+  flex-shrink: 0;
+}
+.view-tab {
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+}
+.view-tab.is-active { background: var(--coral); color: var(--ink); }
+
+/* ---------- Color filter ---------- */
+.color-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.filter-chip {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: var(--cream);
+  color: var(--ink-soft);
+}
+.filter-chip.is-active { background: var(--ink); color: var(--cream); }
+.filter-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.filter-dot:hover { transform: scale(1.12); }
+.filter-dot.is-active { box-shadow: 0 0 0 3px var(--ink); transform: scale(1.12); }
+
+/* ---------- Memo board (grid reuses .board from style.css) ---------- */
+.memo-board { margin-top: 0; min-height: 120px; }
+
+.memo-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  padding: 40px 16px;
+  border: 2px dashed rgba(43,38,32,0.25);
+  border-radius: 16px;
+}
+
+/* ---------- Memo card (extends .sticky) ---------- */
+.memo-card { padding-top: 38px; }
+
+.memo-pin {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: rgba(255,255,255,0.55);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s ease, transform 0.18s ease;
+  z-index: 2;
+}
+.memo-pin:hover { transform: scale(1.08); }
+.memo-pin.is-pinned { background: var(--marigold); transform: rotate(-10deg); }
+
+.memo-text {
+  width: 100%;
+  flex: 1;
+  min-height: 110px;
+  border: none;
+  background: transparent;
+  resize: none;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ink);
+  padding: 0;
+  margin: 4px 0 14px;
+}
+.memo-text:focus { outline: none; }
+.memo-text::placeholder { color: rgba(43,38,32,0.4); }
+
+.memo-archived-text {
+  font-size: 0.92rem;
+  color: var(--ink);
+  opacity: 0.8;
+  margin: 4px 0 14px;
+  min-height: 80px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.memo-footer { margin-top: auto; display: flex; flex-direction: column; gap: 8px; }
+.memo-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.memo-colors { display: flex; gap: 5px; flex-wrap: wrap; }
+.color-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  flex-shrink: 0;
+}
+.color-dot.is-selected { box-shadow: 0 0 0 2px var(--ink); }
+
+.memo-charcount, .memo-time {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.memo-charcount.is-near-limit { color: var(--coral-deep); font-weight: 700; }
+
+.memo-archive {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  flex-shrink: 0;
+}
+.memo-archive:hover { background: var(--note-coral); color: var(--ink); }
+
+.memo-card.is-archived { opacity: 0.7; filter: grayscale(0.35); }
+.memo-card.is-archived:hover { transform: none !important; }
+
+/* ---------- Toolbar header actions (above the board) ---------- */
+.memo-app-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+
+@media (max-width: 640px) {
+  .memo-toolbar { flex-direction: column; align-items: stretch; }
+  .view-tabs { justify-content: center; }
+}
