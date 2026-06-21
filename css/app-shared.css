@@ -1,0 +1,159 @@
+/* ===================================================================
+   NoteTxt — Shared App-Shell styles
+   Reusable across every tool page (diary, notepad, list maker, etc.)
+   Page-specific bits (calendar, sidebar, mood picker...) live in each
+   page's own stylesheet, layered on top of this one.
+   =================================================================== */
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+  letter-spacing: 0.02em;
+}
+.breadcrumb a { color: var(--ink-soft); border-bottom: 1px dashed var(--ink-soft); }
+.breadcrumb a:hover { color: var(--coral-deep); border-color: var(--coral-deep); }
+.breadcrumb span { margin: 0 6px; opacity: 0.6; }
+
+/* ---------- App shell ---------- */
+.app-section { background: var(--cream-deep); }
+.app-shell {
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: var(--shadow-lift);
+}
+.app-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+.app-header .eyebrow { margin-bottom: 6px; }
+.app-header .section-title { margin-bottom: 0; font-size: clamp(1.7rem, 3vw, 2.3rem); }
+
+.app-stats { display: flex; gap: 14px; }
+.stat {
+  background: var(--note-yellow);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  padding: 10px 18px;
+  text-align: center;
+  min-width: 84px;
+}
+.stat:nth-child(2) { background: var(--note-mint); }
+.stat-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.stat-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+  color: var(--ink-soft);
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.app-panel {
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+/* ---------- Editor (shared base; page CSS can add modifiers) ---------- */
+.editor-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.editor-textarea {
+  width: 100%;
+  min-height: 240px;
+  resize: vertical;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  background: var(--cream);
+  padding: 16px 18px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.editor-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 194, 51, 0.5);
+}
+.editor-textarea::placeholder { color: rgba(43,38,32,0.4); }
+
+.editor-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+.word-count, .save-status {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+}
+.save-status.is-saved { color: var(--mint); font-weight: 700; }
+.save-status.is-unsaved { color: var(--coral-deep); font-weight: 700; }
+.editor-actions { display: flex; gap: 10px; margin-left: auto; flex-wrap: wrap; }
+
+.app-empty-note {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin-top: 10px;
+}
+
+/* ---------- Related tools ---------- */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.related-card {
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  padding: 22px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.related-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-soft); }
+.related-card h3 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 6px; }
+.related-card p { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 14px; }
+.related-card a { font-weight: 700; font-size: 0.86rem; border-bottom: 2px solid var(--ink); padding-bottom: 2px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 880px) {
+  .app-grid { grid-template-columns: 1fr; }
+  .app-shell { padding: 22px; }
+}
+@media (max-width: 540px) {
+  .app-stats { width: 100%; }
+  .stat { flex: 1; }
+  .editor-actions { width: 100%; margin-left: 0; justify-content: flex-end; }
+}
