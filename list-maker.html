@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>List Maker – Free Online To-Do, Shopping & Packing List App | NoteTxt</title>
+<meta name="description" content="A free online list maker with seven list types: to-do, shopping, packing, bucket list, goals, reading and custom. Drag-and-drop reordering, checkable items, no sign-up.">
+<meta name="keywords" content="list maker, online list maker, to-do list maker, checklist app, shopping list maker, packing list maker, bucket list maker, free checklist app">
+<meta name="author" content="NoteTxt">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://notetxt.github.io/list-maker">
+<meta name="theme-color" content="#FBF6EA">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://notetxt.github.io/list-maker">
+<meta property="og:title" content="List Maker – Free Online To-Do, Shopping & Packing List App">
+<meta property="og:description" content="A free online list maker with seven list types: to-do, shopping, packing, bucket list, goals, reading and custom. Drag-and-drop reordering, no sign-up.">
+<meta property="og:image" content="https://notetxt.github.io/og-image.png">
+<meta property="og:site_name" content="NoteTxt">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="List Maker – Free Online To-Do, Shopping & Packing List App">
+<meta name="twitter:description" content="Seven list types, drag-and-drop reordering, checkable items. Free, no sign-up, saves privately in your browser.">
+<meta name="twitter:image" content="https://notetxt.github.io/og-image.png">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF8C82'/%3E%3Crect x='25' y='18' width='50' height='64' rx='4' fill='%23FBF6EA'/%3E%3Cline x1='34' y1='34' x2='66' y2='34' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='34' y1='46' x2='66' y2='46' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='34' y1='58' x2='54' y2='58' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/app-shared.css">
+<link rel="stylesheet" href="css/list-maker.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DH0NXE4ME3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DH0NXE4ME3');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9759808041159779" crossorigin="anonymous"></script>
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://notetxt.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "List Maker", "item": "https://notetxt.github.io/list-maker" }
+  ]
+}
+</script>
+
+<!-- Schema: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "List Maker",
+  "url": "https://notetxt.github.io/list-maker",
+  "description": "A free online list maker supporting to-do, shopping, packing, bucket list, goals, reading and custom list types, with checkable items, drag-and-drop reordering, and local auto-save. No account required.",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": [
+    "Seven list types: to-do, shopping, packing, bucket list, goals, reading, custom",
+    "Checkable items with strike-through on complete",
+    "Drag-and-drop and button-based item reordering",
+    "Multiple saved lists with search",
+    "Auto-save to local browser storage",
+    "No sign-up or account required",
+    "Mobile-friendly responsive design"
+  ]
+}
+</script>
+
+<!-- Schema: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question", "name": "Is the List Maker free to use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. List Maker is completely free, with unlimited lists and items and no premium tier." }
+    },
+    {
+      "@type": "Question", "name": "What types of lists can I make?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can create to-do lists, shopping lists, packing lists, bucket lists, goals lists, reading lists, or a blank custom list for anything else." }
+    },
+    {
+      "@type": "Question", "name": "Do I need an account to use the list maker?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There's no sign-up or login; open the page and start creating lists right away." }
+    },
+    {
+      "@type": "Question", "name": "Can I reorder items in a list?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Drag an item by its handle to reorder it on desktop, or use the up and down arrow buttons on any device." }
+    },
+    {
+      "@type": "Question", "name": "Where are my lists stored?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Lists are saved locally in your browser's storage on the device you're using, not on a remote server." }
+    },
+    {
+      "@type": "Question", "name": "Can I keep more than one list at a time?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every list you create is saved in the sidebar, so you can switch between a shopping list, a packing list, and a to-do list without losing any of them." }
+    },
+    {
+      "@type": "Question", "name": "Can I use the list maker on my phone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The list maker is fully responsive, and item reordering works on touch screens through the up and down arrow buttons." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="padding-bottom:40px;" aria-label="Introduction">
+    <div class="hero-doodles" aria-hidden="true">
+      <span class="doodle doodle-1">✓</span>
+      <span class="doodle doodle-2">✎</span>
+      <span class="doodle doodle-4">☐</span>
+    </div>
+    <div class="container hero-inner">
+      <p class="breadcrumb"><a href="/">Home</a><span>/</span>List Maker</p>
+      <p class="eyebrow eyebrow-stamp">Free Online List Maker · No Sign-Up</p>
+      <h1 class="hero-title">Seven kinds of lists, <span class="highlight">one</span> tidy tool.</h1>
+      <p class="hero-sub">Whether it's groceries, a packing checklist, a bucket list, or a plain to-do list, List Maker keeps each one checkable, reorderable, and saved right where you left it.</p>
+      <div class="hero-cta">
+        <a href="#list-app" class="btn btn-primary">Start a list</a>
+        <a href="notepad-online" class="btn btn-ghost">Need free-form notes instead? Try Notepad Online →</a>
+      </div>
+      <p class="hero-meta">No account · No installation · Saved privately in your browser</p>
+    </div>
+  </section>
+
+  <!-- ============ MAIN APP ============ -->
+  <section class="section app-section" id="list-app" aria-label="List Maker application">
+    <div class="container">
+      <div class="app-shell">
+        <div class="app-header">
+          <div>
+            <p class="eyebrow">The App</p>
+            <h2 class="section-title">Build your list</h2>
+          </div>
+          <div class="app-stats">
+            <div class="stat">
+              <span class="stat-num" id="statLists">0</span>
+              <span class="stat-label">Lists</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" id="statDone">0</span>
+              <span class="stat-label">Items checked</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <!-- Lists sidebar -->
+          <div class="app-panel lists-sidebar-panel lists-sidebar">
+            <label for="listsSearch" class="visually-hidden">Search lists</label>
+            <input type="search" id="listsSearch" class="lists-search" placeholder="Search lists…">
+            <button type="button" id="newListBtn" class="new-list-btn">+ New list</button>
+            <div class="type-picker is-hidden" id="typePicker" aria-label="Choose a list type"></div>
+            <div class="lists-list" id="listsList"></div>
+          </div>
+
+          <!-- Editor panel -->
+          <div class="app-panel editor-panel">
+            <div class="editor-top">
+              <label for="listTitleInput" class="visually-hidden">List title</label>
+              <input type="text" id="listTitleInput" class="list-title-input" placeholder="Untitled list" maxlength="120">
+              <span class="type-badge" id="typeBadge"></span>
+            </div>
+
+            <div class="progress-wrap">
+              <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+            </div>
+
+            <div class="add-item-row">
+              <label for="addItemInput" class="visually-hidden">Add an item</label>
+              <input type="text" id="addItemInput" class="add-item-input" placeholder="Add an item and press Enter…">
+              <button type="button" id="addItemBtn" class="btn btn-primary btn-sm">Add</button>
+            </div>
+
+            <div class="item-list" id="itemList"></div>
+
+            <div class="editor-bottom">
+              <span class="word-count" id="wordCount">0 items</span>
+              <span class="save-status" id="saveStatus">No list selected</span>
+              <div class="editor-actions">
+                <button type="button" id="clearDoneBtn" class="btn btn-ghost btn-sm">Clear completed</button>
+                <button type="button" id="deleteListBtn" class="btn btn-ghost btn-sm">Delete list</button>
+              </div>
+            </div>
+            <p class="app-empty-note">Lists save automatically as you check off, add, or reorder items.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIST TYPES ============ -->
+  <section class="section apps" id="list-types" aria-label="Available list types">
+    <div class="container">
+      <p class="eyebrow">Many Types of Lists</p>
+      <h2 class="section-title">Pick a type, or start blank</h2>
+      <p class="section-sub">Every list comes with a matching icon so your sidebar stays easy to scan at a glance.</p>
+
+      <div class="board">
+        <article class="sticky sticky-mint rot-1">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="sticky-icon" aria-hidden="true" style="font-size:2rem;line-height:1;">✅</div>
+          <h3>To-Do List</h3>
+          <p>A classic checklist for daily tasks, errands, and anything with a deadline.</p>
+        </article>
+        <article class="sticky sticky-peach rot-2">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="sticky-icon" aria-hidden="true" style="font-size:2rem;line-height:1;">🛒</div>
+          <h3>Shopping List</h3>
+          <p>A grocery list maker for the weekly shop, ready to check off aisle by aisle.</p>
+        </article>
+        <article class="sticky sticky-sky rot-3">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="sticky-icon" aria-hidden="true" style="font-size:2rem;line-height:1;">🧳</div>
+          <h3>Packing List</h3>
+          <p>A packing list maker so nothing gets left behind before the next trip.</p>
+        </article>
+        <article class="sticky sticky-lavender rot-4">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="sticky-icon" aria-hidden="true" style="font-size:2rem;line-height:1;">🌟</div>
+          <h3>Bucket List</h3>
+          <p>A bucket list maker for the places, goals, and experiences worth chasing.</p>
+        </article>
+        <article class="sticky sticky-coral rot-5">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="sticky-icon" aria-hidden="true" style="font-size:2rem;line-height:1;">🎯</div>
+          <h3>Goals List</h3>
+          <p>Track short and long-term goals as checkable steps instead of vague intentions.</p>
+        </article>
+        <article class="sticky sticky-yellow rot-2">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="sticky-icon" aria-hidden="true" style="font-size:2rem;line-height:1;">📚</div>
+          <h3>Reading List</h3>
+          <p>A to-be-read list maker for books, articles, or anything queued up next.</p>
+        </article>
+        <article class="sticky sticky-turquoise rot-1">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="sticky-icon" aria-hidden="true" style="font-size:2rem;line-height:1;">✏️</div>
+          <h3>Custom List</h3>
+          <p>A blank checklist for anything that doesn't fit the other six types.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section features" id="features" aria-label="List maker features">
+    <div class="container">
+      <p class="eyebrow">Why This List Maker</p>
+      <h2 class="section-title">Everything a checklist needs, nothing it doesn't</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-stamp stamp-coral">FREE</div>
+          <h3>Always free</h3>
+          <p>Unlimited lists and items, every list type included, no premium tier.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-mint">NO LOGIN</div>
+          <h3>No sign-up</h3>
+          <p>No email or password. Pick a list type and start adding items right away.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-lavender">DRAG & DROP</div>
+          <h3>Reorder freely</h3>
+          <p>Drag items into a new order, or use the arrow buttons on any device.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-peach">CHECKABLE</div>
+          <h3>Strike-through on complete</h3>
+          <p>Tick an item and it's struck through instantly, satisfying every time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-sky">LOCAL</div>
+          <h3>Stored on your device</h3>
+          <p>Lists are saved in your browser's local storage, not a remote account.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-yellow">MOBILE</div>
+          <h3>Works on any screen</h3>
+          <p>Build a shopping list on your phone and check it off at the store.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section how" id="how-it-works" aria-label="How the list maker works">
+    <div class="container">
+      <p class="eyebrow">Getting Started</p>
+      <h2 class="section-title">Three steps to your first checklist</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Pick a list type</h3>
+          <p>Choose to-do, shopping, packing, bucket list, goals, reading, or custom.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Add your items</h3>
+          <p>Type an item and press Enter, then reorder by dragging or with the arrows.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Check things off</h3>
+          <p>Tick items as you go. Everything saves automatically along the way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEO DETAIL CONTENT ============ -->
+  <section class="section detail" id="about-list-maker" aria-label="About the online list maker">
+    <div class="container">
+      <p class="eyebrow">A Closer Look</p>
+      <h2 class="section-title">What this list maker is for</h2>
+
+      <div class="detail-row">
+        <h3>A Free Online List Maker</h3>
+        <p>This online list maker turns plain text into checkable items you can tick off one by one. As a free checklist app and to-do list maker, it covers grocery runs, trip packing, project task lists, or any plan that benefits from a satisfying strike-through, all without an account or a download.</p>
+      </div>
+      <div class="detail-row">
+        <h3>Many Types of Lists in One Tool</h3>
+        <p>Rather than one generic checklist, List Maker offers seven starting points: a to-do list, shopping list maker, packing list maker, bucket list maker, goals list, reading list, and a blank custom list. Each keeps its own icon in the sidebar, so a quick glance tells you which list is which even with several open at once.</p>
+      </div>
+      <div class="detail-row">
+        <h3>Drag-and-Drop Reordering</h3>
+        <p>Priorities shift, so items don't have to stay where they were typed. Drag any item by its handle to move it up or down the list on desktop, or use the up and down arrow buttons, which work identically on a touchscreen, to keep the most important items at the top.</p>
+      </div>
+      <div class="detail-row">
+        <h3>Your Lists Stay on Your Device</h3>
+        <p>Every list, item, and checked box is stored locally in your browser rather than uploaded to a server. That keeps the list maker private by default: there's no login screen because there's no remote account behind it, just a set of lists that live on whichever device you created them on.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RELATED TOOLS ============ -->
+  <section class="section use-cases" id="related-tools" aria-label="Related NoteTxt tools">
+    <div class="container">
+      <p class="eyebrow">More From NoteTxt</p>
+      <h2 class="section-title">Tools that pair well with a checklist</h2>
+      <div class="related-grid">
+        <div class="related-card">
+          <h3>Notepad Online</h3>
+          <p>A free-form notepad for the planning and notes that come before the checklist.</p>
+          <a href="notepad-online">Open Notepad Online →</a>
+        </div>
+        <div class="related-card">
+          <h3>Memo Notepad</h3>
+          <p>Quick, color-coded memos for the one-line reminder you don't want to lose.</p>
+          <a href="memo-notepad">Open Memo Notepad →</a>
+        </div>
+        <div class="related-card">
+          <h3>Online Diary</h3>
+          <p>Log how a project or trip actually went once the list itself is checked off.</p>
+          <a href="online-diary">Open Online Diary →</a>
+        </div>
+        <div class="related-card">
+          <h3>Decision Maker</h3>
+          <p>Can't decide what goes on the bucket list? Let the spinner break the tie.</p>
+          <a href="decision-maker">Open Decision Maker →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section faq" id="faq" aria-label="Frequently asked questions about the list maker">
+    <div class="container">
+      <p class="eyebrow">Questions</p>
+      <h2 class="section-title">Frequently asked questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Is the List Maker free to use?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. List Maker is completely free, with unlimited lists and items and no premium tier.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What types of lists can I make?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>You can create to-do lists, shopping lists, packing lists, bucket lists, goals lists, reading lists, or a blank custom list for anything else.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do I need an account to use the list maker?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>No. There's no sign-up or login; open the page and start creating lists right away.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I reorder items in a list?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Drag an item by its handle to reorder it on desktop, or use the up and down arrow buttons on any device.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Where are my lists stored?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Lists are saved locally in your browser's storage on the device you're using, not on a remote server.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I keep more than one list at a time?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Every list you create is saved in the sidebar, so you can switch between a shopping list, a packing list, and a to-do list without losing any of them.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I use the list maker on my phone?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. The list maker is fully responsive, and item reordering works on touch screens through the up and down arrow buttons.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section cta" aria-label="Start a list">
+    <div class="container cta-inner">
+      <h2>Something to check off today?</h2>
+      <p>Seven list types, one tidy tool. No account needed to start your first one.</p>
+      <a href="#list-app" class="btn btn-primary">Start a new list</a>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/header.js" defer></script>
+<script src="js/footer.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/list-maker-app.js" defer></script>
+</body>
+</html>
