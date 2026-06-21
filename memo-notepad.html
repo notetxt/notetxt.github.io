@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Memo Notepad Online – Free Sticky Notes & Quick Memos | NoteTxt</title>
+<meta name="description" content="A free online memo notepad with color-coded sticky memos, pin-to-top, archive & restore, search, and instant auto-save. No sign-up — quick notes saved privately in your browser.">
+<meta name="keywords" content="memo notepad, sticky notes online, quick notes app, online memo board, color coded notes, sticky memo online, quick notepad app">
+<meta name="author" content="NoteTxt">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://notetxt.github.io/memo-notepad">
+<meta name="theme-color" content="#FBF6EA">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://notetxt.github.io/memo-notepad">
+<meta property="og:title" content="Memo Notepad – Free Online Sticky Notes & Quick Memos">
+<meta property="og:description" content="Color-coded sticky memos with pin-to-top, archive & restore, search, and instant auto-save. Free, no sign-up, saves privately in your browser.">
+<meta property="og:image" content="https://notetxt.github.io/og-image.png">
+<meta property="og:site_name" content="NoteTxt">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Memo Notepad – Free Online Sticky Notes & Quick Memos">
+<meta name="twitter:description" content="Color-coded sticky memos with pin-to-top, archive & restore, and search. Free, no sign-up required.">
+<meta name="twitter:image" content="https://notetxt.github.io/og-image.png">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23FF8C82'/%3E%3Crect x='25' y='18' width='50' height='64' rx='4' fill='%23FBF6EA'/%3E%3Cline x1='34' y1='34' x2='66' y2='34' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='34' y1='46' x2='66' y2='46' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3Cline x1='34' y1='58' x2='54' y2='58' stroke='%232B2620' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/app-shared.css">
+<link rel="stylesheet" href="/css/memo.css">
+
+<!-- Schema: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://notetxt.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Memo Notepad", "item": "https://notetxt.github.io/memo-notepad" }
+  ]
+}
+</script>
+
+<!-- Schema: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Memo Notepad",
+  "url": "https://notetxt.github.io/memo-notepad",
+  "description": "A free online memo notepad for quick, color-coded sticky memos with pin-to-top, archive and restore, search and color filtering, and a live character counter. No account required.",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": [
+    "Color-coded sticky memos in eight colors",
+    "Pin important memos to the top of the board",
+    "Archive and restore memos instead of permanent loss",
+    "Search and filter memos by text or color",
+    "Live 280-character counter for quick, focused memos",
+    "Instant auto-save to local browser storage",
+    "No sign-up or account required",
+    "Mobile-friendly responsive design"
+  ]
+}
+</script>
+
+<!-- Schema: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question", "name": "Is Memo Notepad free to use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Memo Notepad is completely free, with unlimited memos and no premium tier." }
+    },
+    {
+      "@type": "Question", "name": "Do I need an account to use it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There's no sign-up or login; tap + New Memo and start typing." }
+    },
+    {
+      "@type": "Question", "name": "Is there a limit on how long a memo can be?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, each memo is capped at 280 characters, on purpose, to keep memos quick rather than turning into long documents." }
+    },
+    {
+      "@type": "Question", "name": "What happens when I archive a memo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Archiving moves a memo out of the main board and into the Archived view, without deleting it." }
+    },
+    {
+      "@type": "Question", "name": "Can I get an archived memo back?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Open the Archived view and tap Restore on any memo to bring it back to the board." }
+    },
+    {
+      "@type": "Question", "name": "Where are my memos stored?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Memos are stored locally in your browser's storage on the device you're using, not on a remote server." }
+    },
+    {
+      "@type": "Question", "name": "What's the difference between Memo Notepad and Notepad Online?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Memo Notepad is built for short, color-coded, pinnable memos capped at 280 characters, while Notepad Online supports longer, multi-note writing with titles and a focus mode." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="padding-bottom:40px;" aria-label="Introduction">
+    <div class="hero-doodles" aria-hidden="true">
+      <span class="doodle doodle-1">✎</span>
+      <span class="doodle doodle-2">📌</span>
+      <span class="doodle doodle-4">~</span>
+    </div>
+    <div class="container hero-inner">
+      <p class="breadcrumb"><a href="/">Home</a><span>/</span>Memo Notepad</p>
+      <p class="eyebrow eyebrow-stamp">Free Memo Board · No Sign-Up</p>
+      <h1 class="hero-title">Catch the thought <span class="highlight">before</span> it slips away.</h1>
+      <p class="hero-sub">Memo Notepad is a board of quick, color-coded sticky memos. Pin what matters, archive what's done, and let everything else save itself the instant you stop typing.</p>
+      <div class="hero-cta">
+        <a href="#memo-app" class="btn btn-primary">Add a memo</a>
+        <a href="notepad-online" class="btn btn-ghost">Writing something longer? Try Notepad Online →</a>
+      </div>
+      <p class="hero-meta">No account · No installation · Saved privately in your browser</p>
+    </div>
+  </section>
+
+  <!-- ============ MAIN APP ============ -->
+  <section class="section app-section" id="memo-app" aria-label="Memo Notepad application">
+    <div class="container">
+      <div class="app-shell">
+        <div class="app-header">
+          <div>
+            <p class="eyebrow">The App</p>
+            <h2 class="section-title">Memo Board</h2>
+          </div>
+          <div class="app-stats">
+            <div class="stat">
+              <span class="stat-num" id="statMemos">0</span>
+              <span class="stat-label">Memos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" id="statPinned">0</span>
+              <span class="stat-label">Pinned</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="memo-toolbar">
+          <label for="memoSearch" class="visually-hidden">Search memos</label>
+          <input type="search" id="memoSearch" class="memo-search" placeholder="Search memos…">
+          <div class="view-tabs" role="tablist">
+            <button type="button" class="view-tab is-active" id="boardTab" data-view="board" role="tab">Board</button>
+            <button type="button" class="view-tab" id="archivedTab" data-view="archived" role="tab">Archived</button>
+          </div>
+          <div class="memo-app-actions">
+            <button type="button" id="emptyTrashBtn" class="btn btn-ghost btn-sm hidden">Empty trash</button>
+            <button type="button" id="newMemoBtn" class="btn btn-primary btn-sm">+ New Memo</button>
+          </div>
+        </div>
+
+        <div class="color-filter" id="colorFilter" aria-label="Filter memos by color">
+          <button type="button" class="filter-chip is-active" data-color="" id="filterAllBtn">All</button>
+          <button type="button" class="filter-dot" data-color="yellow" style="background:var(--note-yellow)" aria-label="Filter yellow memos"></button>
+          <button type="button" class="filter-dot" data-color="pink" style="background:var(--note-pink)" aria-label="Filter pink memos"></button>
+          <button type="button" class="filter-dot" data-color="lavender" style="background:var(--note-lavender)" aria-label="Filter lavender memos"></button>
+          <button type="button" class="filter-dot" data-color="mint" style="background:var(--note-mint)" aria-label="Filter mint memos"></button>
+          <button type="button" class="filter-dot" data-color="peach" style="background:var(--note-peach)" aria-label="Filter peach memos"></button>
+          <button type="button" class="filter-dot" data-color="sky" style="background:var(--note-sky)" aria-label="Filter sky memos"></button>
+          <button type="button" class="filter-dot" data-color="coral" style="background:var(--note-coral)" aria-label="Filter coral memos"></button>
+          <button type="button" class="filter-dot" data-color="turquoise" style="background:var(--note-turquoise)" aria-label="Filter turquoise memos"></button>
+        </div>
+
+        <div class="memo-board board" id="memoBoard"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADVANCED FEATURES ============ -->
+  <section class="section features" id="features" aria-label="Advanced memo notepad features">
+    <div class="container">
+      <p class="eyebrow">Advanced, Not Complicated</p>
+      <h2 class="section-title">Built for speed, with real depth underneath</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-stamp stamp-coral">COLOR</div>
+          <h3>8-color coding</h3>
+          <p>Assign any of eight colors per memo, so meaning is visible at a glance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-mint">PIN</div>
+          <h3>Pin to the top</h3>
+          <p>Pinned memos always sort first, ahead of everything else on the board.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-lavender">ARCHIVE</div>
+          <h3>Archive &amp; restore</h3>
+          <p>Done with a memo? Archive it instead of losing it, and restore it any time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-peach">SEARCH</div>
+          <h3>Search &amp; filter</h3>
+          <p>Find a memo by text, or filter the whole board down to a single color.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-sky">LIVE COUNT</div>
+          <h3>280-character cap</h3>
+          <p>A live counter keeps every memo a quick thought, not a full document.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-stamp stamp-yellow">INSTANT</div>
+          <h3>Saves as you type</h3>
+          <p>No save button, no buttons at all, memos save the moment you pause typing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section how" id="how-it-works" aria-label="How the memo board works">
+    <div class="container">
+      <p class="eyebrow">Getting Started</p>
+      <h2 class="section-title">Three steps to your first memo</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Tap + New Memo</h3>
+          <p>A blank sticky note appears on the board, cursor ready, no setup needed.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Type &amp; color-code</h3>
+          <p>Write your thought, then pick a color that means something to you.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Pin, archive, or leave it</h3>
+          <p>Pin what matters most, archive what's finished, the rest just sits and saves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEO DETAIL CONTENT ============ -->
+  <section class="section detail" id="about-memo-notepad" aria-label="About the memo notepad">
+    <div class="container">
+      <p class="eyebrow">A Closer Look</p>
+      <h2 class="section-title">What this memo notepad is for</h2>
+
+      <div class="detail-row">
+        <h3>A Free Online Memo Notepad</h3>
+        <p>Memo Notepad is built for the thought you need to capture in the next five seconds, not the next five minutes. As a free sticky memo online tool, it skips titles, folders, and formatting in favor of a single board where a new memo is one tap away and saving happens automatically, no account and no install required.</p>
+      </div>
+      <div class="detail-row">
+        <h3>Color-Coded Sticky Memos</h3>
+        <p>Every memo can carry one of eight colors, so a glance at the board tells you more than the text alone. Use color for urgency, for category, or just for whatever system makes sense to you, the color-coded notes filter is built right into the toolbar for quickly narrowing the board down.</p>
+      </div>
+      <div class="detail-row">
+        <h3>Pin, Archive, and Search</h3>
+        <p>Pinned memos stay fixed at the top of the board no matter how many new ones arrive. Once a memo has done its job, archiving tucks it out of the way without deleting it, and the Archived view keeps it available to restore or remove for good. A search bar and color filter make finding one memo among many fast, even on a busy board.</p>
+      </div>
+      <div class="detail-row">
+        <h3>Memo Notepad vs. Notepad Online</h3>
+        <p><a href="notepad-online">Notepad Online</a> and Memo Notepad share the same instant auto-save, but they're built for different jobs. Notepad Online supports multiple long-form notes with titles, search, and a focus mode for sustained writing. Memo Notepad caps every entry at 280 characters and arranges them as a board of sticky notes, built for capturing a thought, not drafting one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RELATED TOOLS ============ -->
+  <section class="section use-cases" id="related-tools" aria-label="Related NoteTxt tools">
+    <div class="container">
+      <p class="eyebrow">More From NoteTxt</p>
+      <h2 class="section-title">Tools that pair well with quick memos</h2>
+      <div class="related-grid">
+        <div class="related-card">
+          <h3>Notepad Online</h3>
+          <p>A free-form notepad for when a memo turns into something longer.</p>
+          <a href="notepad-online">Open Notepad Online →</a>
+        </div>
+        <div class="related-card">
+          <h3>Online Diary</h3>
+          <p>A date-stamped diary with a calendar view, for entries tied to a specific day.</p>
+          <a href="online-diary">Open Online Diary →</a>
+        </div>
+        <div class="related-card">
+          <h3>List Maker</h3>
+          <p>Turn a pinned memo into a checkable to-do list once it's time to act on it.</p>
+          <a href="list-maker">Open List Maker →</a>
+        </div>
+        <div class="related-card">
+          <h3>Decision Maker</h3>
+          <p>Too many color-coded options? Let the spinner pick one for you.</p>
+          <a href="decision-maker">Open Decision Maker →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section faq" id="faq" aria-label="Frequently asked questions about Memo Notepad">
+    <div class="container">
+      <p class="eyebrow">Questions</p>
+      <h2 class="section-title">Frequently asked questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Is Memo Notepad free to use?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Memo Notepad is completely free, with unlimited memos and no premium tier.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Do I need an account to use it?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>No. There's no sign-up or login; tap + New Memo and start typing.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Is there a limit on how long a memo can be?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes, each memo is capped at 280 characters, on purpose, to keep memos quick rather than turning into long documents.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What happens when I archive a memo?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Archiving moves a memo out of the main board and into the Archived view, without deleting it.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I get an archived memo back?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Open the Archived view and tap Restore on any memo to bring it back to the board.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Where are my memos stored?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Memos are stored locally in your browser's storage on the device you're using, not on a remote server.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What's the difference between Memo Notepad and Notepad Online?
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Memo Notepad is built for short, color-coded, pinnable memos capped at 280 characters, while Notepad Online supports longer, multi-note writing with titles and a focus mode.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="section cta" aria-label="Add a memo">
+    <div class="container cta-inner">
+      <h2>Got a thought before it slips away?</h2>
+      <p>A color, a few words, a pin if it matters. No account needed to start.</p>
+      <a href="#memo-app" class="btn btn-primary">Add a memo now</a>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="/js/header.js" defer></script>
+<script src="/js/footer.js" defer></script>
+<script src="/js/main.js" defer></script>
+<script src="/js/memo-app.js" defer></script>
+</body>
+</html>
